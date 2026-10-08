@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>[SEU NOME] — Gestor de Tráfego & Funis de Venda</title>
+<style>
+:root{--bg:#f7f6f2;--card:#fff;--ink:#14161a;--mute:#5b616b;--line:#e3e1da;--accent:#0b6b4f;--accent-ink:#fff;--chip:#eef3ef;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1214;--card:#171b1e;--ink:#eef0ee;--mute:#9aa3a0;--line:#262c30;--accent:#3ddc97;--accent-ink:#06150e;--chip:#1d2a24}}
+:root[data-theme="dark"]{--bg:#0f1214;--card:#171b1e;--ink:#eef0ee;--mute:#9aa3a0;--line:#262c30;--accent:#3ddc97;--accent-ink:#06150e;--chip:#1d2a24}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+section{padding:44px 0 8px}
+h1{font-size:clamp(30px,6vw,46px);line-height:1.1;margin:0 0 14px;letter-spacing:-.02em}
+h2{font-size:13px;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);margin:0 0 18px}
+h3{margin:0 0 6px;font-size:18px}
+p{margin:0 0 12px}.mute{color:var(--mute)}
+.hero{padding-top:56px}
+.tag{display:inline-block;background:var(--chip);color:var(--accent);padding:4px 12px;border-radius:99px;font-size:13px;font-weight:600;margin-bottom:16px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.btn{display:inline-block;padding:12px 20px;border-radius:10px;font-weight:600;text-decoration:none;background:var(--accent);color:var(--accent-ink)}
+.btn.o{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.num{font-size:30px;font-weight:700;letter-spacing:-.02em;color:var(--accent);line-height:1.1}
+.lbl{font-size:13px;color:var(--mute);margin-top:4px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--chip);border-radius:8px;padding:5px 11px;font-size:14px}
+.case .k{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--mute);margin-bottom:6px}
+ul{padding-left:18px;margin:8px 0 0}li{margin-bottom:5px}
+.steps{counter-reset:s;display:grid;gap:12px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px 16px 58px;position:relative}
+.step:before{counter-increment:s;content:counter(s);position:absolute;left:16px;top:14px;width:30px;height:30px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-weight:700}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-top:12px}
+summary{cursor:pointer;font-weight:600}
+.scroll{overflow-x:auto}
+.hero-grid{display:flex;gap:28px;align-items:center;flex-wrap:wrap-reverse}
+.hero-text{flex:1 1 340px;min-width:0}
+.ph{position:relative;overflow:hidden;background:var(--chip);border:1px dashed var(--line);display:grid;place-items:center;color:var(--mute);font-size:12px;text-align:center;padding:8px}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;max-width:100%}
+.avatar{width:200px;height:200px;border-radius:50%;flex:0 0 auto;margin:0 auto}
+.gallery{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.gallery .ph{aspect-ratio:1/1;border-radius:14px}
+.gallery .ph:first-child{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+@media (max-width:520px){.gallery .ph:first-child{grid-column:span 2;grid-row:span 1;aspect-ratio:2/1}}
+.proj{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.proj .ph{aspect-ratio:16/10;border:0;border-bottom:1px dashed var(--line);border-radius:0}
+.proj .body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px;flex:1}
+.proj .btns{margin-top:auto}
+.btn.s{padding:8px 14px;font-size:14px}
+.projgrid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:14px}
+footer{padding:48px 0 56px;text-align:center}
+.theme{position:fixed;right:14px;top:calc(env(safe-area-inset-top,0px) + 12px);background:var(--card);border:1px solid var(--line);border-radius:99px;width:38px;height:38px;cursor:pointer;color:var(--ink);font-size:16px}
+</style>
+</head>
+<body>
+<button class="theme" id="theme" aria-label="Alternar tema">◐</button>
+<div class="wrap">
+
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <span class="tag">Gestor de Tráfego · Funis de Venda · Direct Response · Design</span>
+      <h1>[SEU NOME]<br>Transformo tráfego em venda, não só em clique.</h1>
+      <p class="mute" style="max-width:640px">+5 anos em Meta Ads e funis completos (copy, página, oferta e tracking). Antes disso, 4 anos em vendas e prospecção ativa — por isso olho para o CPA e para o caixa, não para métrica de vaidade.</p>
+      <div class="btns">
+        <a class="btn" href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        <a class="btn o" href="#cases">Ver resultados</a>
+      </div>
+    </div>
+    <!-- FOTO PROFISSIONAL: salve como foto-perfil.jpg na mesma pasta do index.html -->
+    <div class="ph avatar">foto-perfil.jpg<img src="foto-perfil.jpg" alt="Foto profissional" onerror="this.remove()"></div>
+  </div>
+</section>
+
+<section>
+  <h2>Em números</h2>
+  <div class="grid">
+    <div class="card"><div class="num">5+ anos</div><div class="lbl">Tráfego pago e funis de venda</div></div>
+    <div class="card"><div class="num">4 anos</div><div class="lbl">Vendas e prospecção ativa (mercado financeiro, empresa americana)</div></div>
+    <div class="card"><div class="num">R$ 3k/dia</div><div class="lbl">Melhor dia — funil completo em nicho novo (estofados)</div></div>
+    <div class="card"><div class="num">5 dígitos</div><div class="lbl">Funil Quiz + VSL de emagrecimento, montado do zero</div></div>
+  </div>
+</section>
+
+<section id="cases">
+  <h2>Cases</h2>
+  <div class="grid">
+    <div class="card case"><div class="k">Emagrecimento · Brasil</div><h3>Quiz + VSL para nutricionista</h3>
+      <p class="mute">Estratégia, páginas, copy, quiz, VSL e campanhas — tudo sozinho.</p>
+      <ul><li>Resultado: faturamento de múltiplos 5 dígitos</li><li>Conta fechando no CPA, não só CTR bom</li></ul></div>
+    <div class="card case"><div class="k">Curso de higienização de estofados</div><h3>Funil completo em nicho novo</h3>
+      <p class="mute">Nunca tinha atuado no nicho; estruturei o funil inteiro para o expert.</p>
+      <ul><li>Resultado: R$ 3k faturados em um dia</li></ul></div>
+    <div class="card case"><div class="k">Nutra · EUA</div><h3>Direct Response em inglês</h3>
+      <p class="mute">Presell própria, criativos próprios e VSL, adaptados ao mercado americano.</p>
+      <ul><li>Aprendizado do zero sobre DR para fora</li><li>Operação com contingência (BM, proxy, multilogin)</li></ul></div>
+    <div class="card case"><div class="k">Operação própria · Low ticket</div><h3>Tráfego direto para oferta low ticket</h3>
+      <p class="mute">Renda extra no Brasil, em sociedade, cuidando de copy e funil.</p>
+      <ul><li>Pico de R$ 800 em um dia nesse modelo</li></ul></div>
+  </div>
+  <p class="mute" style="margin-top:14px;font-size:14px">Prints e dashboards de cada case disponíveis sob solicitação.</p>
+</section>
+
+<section>
+  <h2>Habilidades</h2>
+  <p class="mute" style="max-width:640px">Sou um perfil coringa: entendo o funil de ponta a ponta e consigo assumir qualquer etapa dele, do anúncio até a venda.</p>
+  <div class="grid" style="margin-top:14px">
+    <div class="card"><h3>Tráfego pago</h3><p class="mute" style="margin:0">Meta Ads em tráfego direto, lançamentos, low ticket, negócios locais e perpétuo. Teste de criativo, público e oferta, e análise de métricas até bater o CPA.</p></div>
+    <div class="card"><h3>Funis de venda</h3><p class="mute" style="margin:0">Quiz + VSL, presell, página de vendas, checkout e sequências de e-mail e WhatsApp. Construo o funil inteiro, não só a campanha.</p></div>
+    <div class="card"><h3>Copy e oferta</h3><p class="mute" style="margin:0">Roteiros de anúncio, headlines, copy de página e VSL, e estruturação de oferta. Sei ler um criativo e dizer por que prende ou não.</p></div>
+    <div class="card"><h3>Páginas e design</h3><p class="mute" style="margin:0">Crio e publico landing pages, páginas de venda e quizzes em WordPress, Atomicat e código, com foco em mobile e velocidade.</p></div>
+    <div class="card"><h3>Tracking e dados</h3><p class="mute" style="margin:0">Pixel, CAPI, RedTrack, GTM e UTMs. Acompanho CPA, ROI e ROAS para saber o que realmente está dando lucro.</p></div>
+    <div class="card"><h3>Vendas e abordagem</h3><p class="mute" style="margin:0">4 anos de prospecção ativa. Entendo o que faz alguém comprar, e isso melhora anúncio, página e fechamento.</p></div>
+    <div class="card"><h3>Contingência e operação</h3><p class="mute" style="margin:0">Já perdi BMs e contas e aprendi a manter a operação rodando com estrutura reserva, proxy e rotina de acompanhamento.</p></div>
+    <div class="card"><h3>Mercados e nichos</h3><p class="mute" style="margin:0">Emagrecimento, renda extra, estofados, negócios locais e Nutra nos EUA. Me adapto rápido a nicho e mercado novos.</p></div>
+  </div>
+</section>
+
+<section id="design">
+  <h2>Design e produtos digitais</h2>
+  <div class="card">
+    <h3>Construo produtos digitais do zero</h3>
+    <p class="mute">Na construção de produtos digitais, desenvolvi habilidades que vão além de desenhar uma página: construo tudo do zero, da arte e da identidade visual até a landing page, os mockups e o design do produto e etc.</p>
+    <div class="chips">
+      <span class="chip">Construção do zero</span><span class="chip">Direção de arte</span><span class="chip">Identidade visual</span><span class="chip">Landing pages</span><span class="chip">Mockups</span><span class="chip">Design de presell</span><span class="chip">Mobile-first</span>
+    </div>
+  </div>
+  <p class="mute" style="margin:18px 0 0">Alguns trabalhos que fiz 100% por conta própria:</p>
+  <!-- PROJETOS: salve os prints como projeto-1.jpg ... projeto-4.jpg na mesma pasta do index.html.
+       Em cada card troque o nome e a descrição. -->
+  <div class="projgrid">
+    <div class="card proj">
+      <div class="ph">projeto-1.jpg<img src="projeto-1.jpg" alt="Print do Projeto 1" loading="lazy" onerror="this.remove()"></div>
+      <div class="body">
+        <h3>Nome do Projeto 1</h3>
+        <p class="mute" style="margin:0">Uma linha sobre o que é o site e o objetivo dele.</p>
+      </div>
+    </div>
+    <div class="card proj">
+      <div class="ph">projeto-2.jpg<img src="projeto-2.jpg" alt="Print do Projeto 2" loading="lazy" onerror="this.remove()"></div>
+      <div class="body">
+        <h3>Nome do Projeto 2</h3>
+        <p class="mute" style="margin:0">Uma linha sobre o que é o site e o objetivo dele.</p>
+      </div>
+    </div>
+    <div class="card proj">
+      <div class="ph">projeto-3.jpg<img src="projeto-3.jpg" alt="Print do Projeto 3" loading="lazy" onerror="this.remove()"></div>
+      <div class="body">
+        <h3>Nome do Projeto 3</h3>
+        <p class="mute" style="margin:0">Uma linha sobre o que é o site e o objetivo dele.</p>
+      </div>
+    </div>
+    <div class="card proj">
+      <div class="ph">projeto-4.jpg<img src="projeto-4.jpg" alt="Print do Projeto 4" loading="lazy" onerror="this.remove()"></div>
+      <div class="body">
+        <h3>Nome do Projeto 4</h3>
+        <p class="mute" style="margin:0">Uma linha sobre o que é o site e o objetivo dele.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Stack</h2>
+  <div class="chips">
+    <span class="chip">Meta Ads Manager</span><span class="chip">Business Manager</span><span class="chip">Pixel + CAPI</span><span class="chip">RedTrack</span><span class="chip">UTMify / ClickMagic</span><span class="chip">VTurb</span><span class="chip">Google Tag Manager</span><span class="chip">Google Analytics</span><span class="chip">WordPress</span><span class="chip">Atomicat</span><span class="chip">Kiwify / Hotmart</span><span class="chip">E-mail e WhatsApp</span><span class="chip">Multilogin + proxy</span><span class="chip">Spy tools</span><span class="chip">Google Sheets</span>
+  </div>
+</section>
+
+<section>
+  <h2>Formação e desenvolvimento</h2>
+  <div class="grid">
+    <div class="card"><h3>Cursos de tráfego</h3><ul><li>Pedro Sobral — base, gestão de ativos, métricas</li><li>Pedro Andrade — tráfego direto e Direct Response</li></ul></div>
+    <div class="card"><h3>Imersões internacionais</h3><ul><li>El Poder Estar en Creer — José Ardon</li><li>One Billion — Ivan Tapia</li></ul></div>
+    <div class="card"><h3>Imersão nacional</h3><ul><li>Protagon — Wendel Carvalho</li></ul></div>
+  </div>
+
+  <details>
+    <summary>Biblioteca — o que leio e aplico (45+ livros)</summary>
+    <div style="margin-top:14px">
+      <p><b>Persuasão e vendas</b><br><span class="mute">As Armas da Persuasão (Cialdini) · Objeções (Jeb Blount) · Manual de Persuasão do FBI (Jack Schafer) · Jogo do Poder (Henrik Fexeus) · Como Convencer Alguém em 90 Segundos (Boothman) · Gatilhos Mentais (Gustavo Ferreira)</span></p>
+      <p><b>Copy e marketing</b><br><span class="mute">Confissões de um Publicitário (Ogilvy) · Transformando Palavras em Dinheiro (Ícaro de Carvalho) · Clique Aqui (Natanael Oliveira) · Marketing 4.0 (Kotler) · Nocaute (Gary Vee) · A Lógica do Consumo (Lindstrom)</span></p>
+      <p><b>Crescimento e negócios</b><br><span class="mute">Hacking Growth (Sean Ellis) · Tração (Weinberg e Mares) · Scrum (Jeff Sutherland) · Salomão, o Homem Mais Rico que Já Existiu</span></p>
+      <p><b>Liderança (John Maxwell)</b><br><span class="mute">17 Princípios do Trabalho em Equipe · 21 Qualidades Indispensáveis de um Líder · Liderando para o Sucesso · Todos se Comunicam, Poucos se Conectam · Até Onde Você Vai · Você Pode Realizar seu Sonho · O Sucesso Está em Você · Você Faz a Diferença · Você Nasceu para Liderar</span></p>
+      <p><b>Produtividade e hábitos</b><br><span class="mute">Essencialismo (McKeown) · Micro-hábitos (BJ Fogg) · Comece pelo Mais Difícil (Brian Tracy) · A Tríade do Tempo (Christian Barbosa) · Ultra Aprendizado (Scott Young) · Pare de Tentar, Comece a Fazer (Júlia Kristina)</span></p>
+      <p style="margin:0"><b>Mentalidade</b><br><span class="mute">Poder sem Limites e Passos de Gigante (Tony Robbins) · Quem Pensa Enriquece e As 16 Leis do Sucesso (Napoleon Hill) · 12 Regras para a Vida (Jordan Peterson) · O Poder do Subconsciente (Joseph Murphy) · Psicocibernética (Maxwell Maltz) · Davi e Golias (Gladwell) · O Jeito Harvard de Ser Feliz (Shawn Achor) · O Óbvio que Ignoramos (Jacob Petry) · Nascido para o Sucesso (Colin Turner) · Seja Foda (Caio Carneiro) · Sobre a Escrita (Stephen King)</span></p>
+    </div>
+  </details>
+</section>
+
+<section id="lifestyle">
+  <h2>Lifestyle</h2>
+  <p class="mute" style="max-width:640px">Um pouco sobre mim e o meu porquê.</p>
+  <!-- FOTOS: salve como lifestyle-1.jpg ... lifestyle-5.jpg na mesma pasta do index.html -->
+  <div class="gallery" style="margin-top:14px">
+    <div class="ph">lifestyle-1.jpg<img src="lifestyle-1.jpg" alt="Lifestyle 1" loading="lazy" onerror="this.remove()"></div>
+    <div class="ph">lifestyle-2.jpg<img src="lifestyle-2.jpg" alt="Lifestyle 2" loading="lazy" onerror="this.remove()"></div>
+    <div class="ph">lifestyle-3.jpg<img src="lifestyle-3.jpg" alt="Lifestyle 3" loading="lazy" onerror="this.remove()"></div>
+    <div class="ph">lifestyle-4.jpg<img src="lifestyle-4.jpg" alt="Lifestyle 4" loading="lazy" onerror="this.remove()"></div>
+    <div class="ph">lifestyle-5.jpg<img src="lifestyle-5.jpg" alt="Lifestyle 5" loading="lazy" onerror="this.remove()"></div>
+  </div>
+  <div class="btns"><a class="btn o" href="https://www.instagram.com/SEUUSUARIO" target="_blank" rel="noopener">Ver meu Instagram</a></div>
+</section>
+
+<section>
+  <h2>Sobre</h2>
+  <p>Comecei em vendas, aprendi o que faz alguém comprar e migrei para o digital. Hoje uno estratégia, análise, copy e tráfego para construir aquisição que fecha a conta. Sou executor, gosto de ambiente com autonomia, número na mesa e gente que constrói. Fora do trabalho: viagens e música (ex-músico).</p>
+</section>
+
+<footer>
+  <h2>Vamos conversar?</h2>
+  <div class="btns" style="justify-content:center">
+    <a class="btn" href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn o" href="mailto:seu@email.com">E-mail</a>
+    <a class="btn o" href="https://www.linkedin.com/in/SEUPERFIL" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</footer>
+</div>
+<script>
+document.getElementById('theme').addEventListener('click',function(){
+  var r=document.documentElement;
+  var dark=r.getAttribute('data-theme')==='dark'||(!r.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);
+  r.setAttribute('data-theme',dark?'light':'dark');
+});
+</script>
+</body>
+</html>
