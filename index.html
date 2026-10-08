@@ -3,7 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>CESAR LIBARINO — Gestor de Tráfego & Funis de Venda</title>
+<title>Cesar Libarino — Gestor de Tráfego & Funis de Venda</title>
+<meta name="description" content="Gestor de tráfego e funis para experts e infoprodutos. Do anúncio à página de venda. Meta Ads, Direct Response, copy, páginas e tracking.">
+<meta property="og:title" content="Cesar Libarino — Gestor de Tráfego & Funis de Venda">
+<meta property="og:description" content="Do anúncio à página de venda: Meta Ads, funis, copy, páginas e tracking.">
+<meta property="og:type" content="website">
+<!-- Para aparecer imagem ao colar o link no WhatsApp/LinkedIn, adicione depois do deploy:
+<meta property="og:image" content="https://SEU-DOMINIO.vercel.app/foto-perfil.jpg"> -->
 <style>
 :root{--bg:#f7f6f2;--card:#fff;--ink:#14161a;--mute:#5b616b;--line:#e3e1da;--accent:#0b6b4f;--accent-ink:#fff;--chip:#eef3ef;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -52,6 +58,15 @@ summary{cursor:pointer;font-weight:600}
 .proj .btns{margin-top:auto}
 .btn.s{padding:8px 14px;font-size:14px}
 .projgrid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:14px}
+.case dl{margin:10px 0 0;display:grid;gap:8px}
+.case dt{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:700}
+.case dd{margin:0;color:var(--mute);font-size:15px}
+.case dd.res{color:var(--ink);font-weight:600}
+.pillar h3{margin-bottom:10px}
+.pillar ul{margin:0;list-style:none;padding:0}
+.pillar li{padding-left:16px;position:relative;color:var(--mute);font-size:15px}
+.pillar li:before{content:"•";position:absolute;left:0;color:var(--accent)}
+.more{margin-top:14px}
 footer{padding:48px 0 56px;text-align:center}
 .theme{position:fixed;right:14px;top:calc(env(safe-area-inset-top,0px) + 12px);background:var(--card);border:1px solid var(--line);border-radius:99px;width:38px;height:38px;cursor:pointer;color:var(--ink);font-size:16px}
 </style>
@@ -64,15 +79,16 @@ footer{padding:48px 0 56px;text-align:center}
   <div class="hero-grid">
     <div class="hero-text">
       <span class="tag">Gestor de Tráfego · Funis de Venda · Direct Response · Design</span>
-      <h1>[SEU NOME]<br>Transformo tráfego em venda, não só em clique.</h1>
-      <p class="mute" style="max-width:640px">+5 anos em Meta Ads e funis completos (copy, página, oferta e tracking). Antes disso, 4 anos em vendas e prospecção ativa — por isso olho para o CPA e para o caixa, não para métrica de vaidade.</p>
+      <h1>Cesar Libarino<br>Gestor de tráfego e funis para experts e infoprodutos.</h1>
+      <p style="font-size:18px;margin:0 0 10px;max-width:640px">Do anúncio à página de venda: eu monto, rastreio e otimizo o funil inteiro.</p>
+      <p class="mute" style="max-width:640px">+5 anos em Meta Ads e Direct Response, com 4 anos de vendas e prospecção ativa antes disso. Melhor resultado: R$ 3k em um dia num funil completo, em um nicho em que eu nunca tinha atuado.</p>
       <div class="btns">
-        <a class="btn" href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        <a class="btn" href="https://wa.me/55SEUNUMERO?text=Oi%20Cesar%2C%20vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar." target="_blank" rel="noopener">Chamar no WhatsApp</a>
         <a class="btn o" href="#cases">Ver resultados</a>
       </div>
     </div>
     <!-- FOTO PROFISSIONAL: salve como foto-perfil.jpg na mesma pasta do index.html -->
-    <div class="ph avatar">foto-perfil.jpg<img src="foto-perfil.jpg" alt="Foto profissional" onerror="this.remove()"></div>
+    <div class="ph avatar">foto-perfil.jpg<img src="foto-perfil.jpg" alt="Cesar Libarino" onerror="this.remove()"></div>
   </div>
 </section>
 
@@ -90,33 +106,47 @@ footer{padding:48px 0 56px;text-align:center}
   <h2>Cases</h2>
   <div class="grid">
     <div class="card case"><div class="k">Emagrecimento · Brasil</div><h3>Quiz + VSL para nutricionista</h3>
-      <p class="mute">Estratégia, páginas, copy, quiz, VSL e campanhas — tudo sozinho.</p>
-      <ul><li>Resultado: faturamento de múltiplos 5 dígitos</li><li>Conta fechando no CPA, não só CTR bom</li></ul></div>
-    <div class="card case"><div class="k">Curso de higienização de estofados</div><h3>Funil completo em nicho novo</h3>
-      <p class="mute">Nunca tinha atuado no nicho; estruturei o funil inteiro para o expert.</p>
-      <ul><li>Resultado: R$ 3k faturados em um dia</li></ul></div>
+      <dl><dt>Contexto</dt><dd>Nutricionista sem funil estruturado.</dd>
+      <dt>O que fiz</dt><dd>Estratégia, páginas, copy, quiz, VSL e campanhas, do zero e sozinho.</dd>
+      <dt>Resultado</dt><dd class="res">Faturamento de 5 dígitos, com a conta fechando no CPA.</dd></dl></div>
+    <div class="card case"><div class="k">Estofados · Curso online</div><h3>Funil completo em nicho novo</h3>
+      <dl><dt>Contexto</dt><dd>Expert de higienização de estofados; nicho em que eu nunca tinha atuado.</dd>
+      <dt>O que fiz</dt><dd>Estruturei o funil inteiro: páginas, oferta e tráfego.</dd>
+      <dt>Resultado</dt><dd class="res">R$ 3k faturados em um único dia.</dd></dl></div>
     <div class="card case"><div class="k">Nutra · EUA</div><h3>Direct Response em inglês</h3>
-      <p class="mute">Presell própria, criativos próprios e VSL, adaptados ao mercado americano.</p>
-      <ul><li>Aprendizado do zero sobre DR para fora</li><li>Operação com contingência (BM, proxy, multilogin)</li></ul></div>
-    <div class="card case"><div class="k">Operação própria · Low ticket</div><h3>Tráfego direto para oferta low ticket</h3>
-      <p class="mute">Renda extra no Brasil, em sociedade, cuidando de copy e funil.</p>
-      <ul><li>Pico de R$ 800 em um dia nesse modelo</li></ul></div>
+      <dl><dt>Contexto</dt><dd>Operação própria no mercado americano.</dd>
+      <dt>O que fiz</dt><dd>Presell, criativos, VSL, tracking e contingência (BM, proxy, multilogin).</dd>
+      <dt>Resultado</dt><dd class="res">Operação rodando do zero em um mercado novo para mim.</dd></dl></div>
+    <div class="card case"><div class="k">Operação própria · Tráfego direto</div><h3>Oferta low ticket, renda extra</h3>
+      <dl><dt>Contexto</dt><dd>Operação em sociedade para o público brasileiro.</dd>
+      <dt>O que fiz</dt><dd>Campanhas, estrutura do funil e tracking.</dd>
+      <dt>Resultado</dt><dd class="res">Pico de R$ 800 em um dia nesse modelo.</dd></dl></div>
   </div>
   <p class="mute" style="margin-top:14px;font-size:14px">Prints e dashboards de cada case disponíveis sob solicitação.</p>
+  <!-- PROVA DE TERCEIROS (opcional, com autorização): descomente e preencha
+  <div class="card" style="margin-top:14px"><p style="margin:0 0 6px">"Frase curta de um expert ou sócio sobre o seu trabalho."</p><div class="lbl">Nome, nicho</div></div>
+  -->
 </section>
 
 <section>
   <h2>Habilidades</h2>
-  <p class="mute" style="max-width:640px">Sou um perfil coringa: entendo o funil de ponta a ponta e consigo assumir qualquer etapa dele, do anúncio até a venda.</p>
+  <p class="mute" style="max-width:640px">Especialista em Meta Ads e funis, capaz de assumir qualquer etapa, do anúncio até a venda.</p>
   <div class="grid" style="margin-top:14px">
-    <div class="card"><h3>Tráfego pago</h3><p class="mute" style="margin:0">Meta Ads em tráfego direto, lançamentos, low ticket, negócios locais e perpétuo. Teste de criativo, público e oferta, e análise de métricas até bater o CPA.</p></div>
-    <div class="card"><h3>Funis de venda</h3><p class="mute" style="margin:0">Quiz + VSL, presell, página de vendas, checkout e sequências de e-mail e WhatsApp. Construo o funil inteiro, não só a campanha.</p></div>
-    <div class="card"><h3>Copy e oferta</h3><p class="mute" style="margin:0">Roteiros de anúncio, headlines, copy de página e VSL, e estruturação de oferta. Sei ler um criativo e dizer por que prende ou não.</p></div>
-    <div class="card"><h3>Páginas e design</h3><p class="mute" style="margin:0">Crio e publico landing pages, páginas de venda e quizzes em WordPress, Atomicat e código, com foco em mobile e velocidade.</p></div>
-    <div class="card"><h3>Tracking e dados</h3><p class="mute" style="margin:0">Pixel, CAPI, RedTrack, GTM e UTMs. Acompanho CPA, ROI e ROAS para saber o que realmente está dando lucro.</p></div>
-    <div class="card"><h3>Vendas e abordagem</h3><p class="mute" style="margin:0">4 anos de prospecção ativa. Entendo o que faz alguém comprar, e isso melhora anúncio, página e fechamento.</p></div>
-    <div class="card"><h3>Contingência e operação</h3><p class="mute" style="margin:0">Já perdi BMs e contas e aprendi a manter a operação rodando com estrutura reserva, proxy e rotina de acompanhamento.</p></div>
-    <div class="card"><h3>Mercados e nichos</h3><p class="mute" style="margin:0">Emagrecimento, renda extra, estofados, negócios locais e Nutra nos EUA. Me adapto rápido a nicho e mercado novos.</p></div>
+    <div class="card pillar"><h3>Aquisição</h3><ul>
+      <li>Meta Ads em tráfego direto, lançamentos, low ticket, negócios locais e perpétuo</li>
+      <li>Teste de criativo, público e oferta (ABO para validar, CBO para escalar)</li>
+      <li>Leitura de hook rate, hold rate, CTR e CPA</li>
+      <li>Mercados: Brasil e EUA; emagrecimento, renda extra, estofados e negócios locais</li></ul></div>
+    <div class="card pillar"><h3>Conversão</h3><ul>
+      <li>Funis: Quiz + VSL, presell, página de vendas, checkout, e-mail e WhatsApp</li>
+      <li>Copy de anúncio, página e VSL; estruturação de oferta</li>
+      <li>Landing pages e quizzes em WordPress, Atomicat e código, mobile-first</li>
+      <li>4 anos de prospecção ativa: entendo o que faz alguém comprar</li></ul></div>
+    <div class="card pillar"><h3>Operação e dados</h3><ul>
+      <li>Pixel, CAPI, RedTrack, GTM e UTMs</li>
+      <li>Acompanhamento de CPA, ROI e ROAS</li>
+      <li>Contingência: estrutura reserva, proxy e rotina para a operação não parar</li>
+      <li>Nomenclatura e organização para subir campanhas em volume sem erro</li></ul></div>
   </div>
 </section>
 
@@ -161,6 +191,10 @@ footer{padding:48px 0 56px;text-align:center}
         <p class="mute" style="margin:0">Uma linha sobre o que é o site e o objetivo dele.</p>
       </div>
     </div>
+  </div>
+  <details class="more">
+    <summary>Ver mais projetos</summary>
+    <div class="projgrid">
     <div class="card proj">
       <div class="ph">projeto-5.jpg<img src="projeto-5.jpg" alt="Print do Projeto 5" loading="lazy" onerror="this.remove()"></div>
       <div class="body">
@@ -189,7 +223,8 @@ footer{padding:48px 0 56px;text-align:center}
         <p class="mute" style="margin:0">Uma linha sobre o que é o site e o objetivo dele.</p>
       </div>
     </div>
-  </div>
+    </div>
+  </details>
 </section>
 
 <section>
@@ -236,13 +271,23 @@ footer{padding:48px 0 56px;text-align:center}
 
 <section>
   <h2>Sobre</h2>
-  <p>Comecei em vendas, aprendi o que faz alguém comprar e migrei para o digital. Hoje uno estratégia, análise, copy e tráfego para construir aquisição que fecha a conta. Sou executor, gosto de ambiente com autonomia, número na mesa e gente que constrói. Fora do trabalho: viagens e música (ex-músico).</p>
+  <p>Comecei em vendas: 4 anos prospectando ativamente para uma empresa americana de produtos digitais no mercado financeiro. Ali aprendi que o que decide uma venda é a abordagem, não o volume de contatos. Levei isso para o digital, onde hoje construo e opero funis do anúncio à página de venda.</p>
+  <p>Aprendi na prática, rodando operações próprias e em sociedade, perdendo contas, ajustando e voltando mais rápido. Sou executor e gosto de número na mesa. Fora do trabalho, viajo e toco (ex-músico).</p>
+</section>
+
+<section>
+  <h2>Disponível para</h2>
+  <div class="grid">
+    <div class="card"><h3>Vaga em agência ou empresa</h3><p class="mute" style="margin:0">Gestão de tráfego e apoio na estrutura do funil.</p></div>
+    <div class="card"><h3>Projetos com experts</h3><p class="mute" style="margin:0">Funil, páginas e tráfego, ou só uma etapa dele.</p></div>
+    <div class="card"><h3>Parcerias</h3><p class="mute" style="margin:0">Operações em sociedade com oferta validada.</p></div>
+  </div>
 </section>
 
 <footer>
   <h2>Vamos conversar?</h2>
   <div class="btns" style="justify-content:center">
-    <a class="btn" href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn" href="https://wa.me/55SEUNUMERO?text=Oi%20Cesar%2C%20vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar." target="_blank" rel="noopener">WhatsApp</a>
     <a class="btn o" href="mailto:seu@email.com">E-mail</a>
     <a class="btn o" href="https://www.linkedin.com/in/SEUPERFIL" target="_blank" rel="noopener">LinkedIn</a>
   </div>
